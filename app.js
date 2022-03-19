@@ -3,9 +3,17 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
+const cors = require("cors");
+
+const authRouter = require("./app/api/v1/auth/router");
 const usersRouter = require("./app/api/v1/users/router");
 
+const notFoundMiddleware = require("./app/middlewares/not-found");
+const handleErrorMiddleware = require("./app/middlewares/handle-error");
+
 const app = express();
+
+app.use(cors());
 
 app.use(logger("dev"));
 app.use(express.json());
@@ -15,6 +23,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const apiVersion = "/api/v1";
 
+app.use(`${apiVersion}/auth`, authRouter);
 app.use(`${apiVersion}/users`, usersRouter);
+
+app.use(notFoundMiddleware);
+app.use(handleErrorMiddleware);
 
 module.exports = app;
