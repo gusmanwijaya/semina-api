@@ -6,6 +6,7 @@ const logger = require("morgan");
 const cors = require("cors");
 
 const authRouter = require("./app/api/v1/auth/router");
+const categoryRouter = require("./app/api/v1/category/router");
 const usersRouter = require("./app/api/v1/users/router");
 
 const notFoundMiddleware = require("./app/middlewares/not-found");
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, "public")));
 const apiVersion = "/api/v1";
 
 app.use(`${apiVersion}/auth`, authRouter);
+app.use(`${apiVersion}/category`, categoryRouter);
 app.use(`${apiVersion}/users`, usersRouter);
 
 app.use(notFoundMiddleware);
