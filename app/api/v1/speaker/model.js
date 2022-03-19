@@ -8,7 +8,10 @@ const SpeakerSchema = new mongoose.Schema(
       maxLength: 50,
       required: [true, "Name can't be empty"],
     },
-    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   { timestamps: true }
 );

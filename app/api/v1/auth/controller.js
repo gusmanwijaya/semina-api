@@ -24,20 +24,16 @@ const signIn = async (req, res, next) => {
   try {
     const { email, password } = req.body;
 
-    if (!email || !password) {
-      throw new CustomAPIError.BadRequest("Please provide email and password");
-    }
+    if (!email || !password)
+      throw new CustomAPIError.BadRequest("Email or password can't be empty");
 
     const data = await User.findOne({ email });
 
-    if (!data) {
-      throw new CustomAPIError.Unauthorized("Invalid credentials");
-    }
+    if (!data) throw new CustomAPIError.Unauthorized("Invalid credentials");
 
     const isPasswordCorrect = await data.comparePassword(password);
-    if (!isPasswordCorrect) {
+    if (!isPasswordCorrect)
       throw new CustomAPIError.Unauthorized("Invalid credentials");
-    }
 
     const token = createJWT({
       payload: createTokenUser(data),
