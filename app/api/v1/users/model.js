@@ -5,18 +5,18 @@ const UserSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Please provide name"],
+      required: [true, "Name can't be empty"],
       minlength: 3,
       maxlength: 50,
     },
     email: {
       type: String,
-      required: [true, "Please provide email"],
+      required: [true, "Email can't be empty"],
       unique: true,
     },
     password: {
       type: String,
-      required: [true, "Please provide password"],
+      required: [true, "Password can't be empty"],
       minlength: 6,
     },
     role: {
