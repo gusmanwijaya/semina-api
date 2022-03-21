@@ -4,13 +4,22 @@ const SpeakerSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      minLength: 3,
-      maxLength: 50,
       required: [true, "Name can't be empty"],
+      minlength: 3,
+      maxlength: 50,
+    },
+    avatar: {
+      type: String,
+      default: "images/avatar.png",
+    },
+    role: {
+      type: String,
+      required: [true, "Role can't be empty"],
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
+      required: [true, "User can't be empty"],
     },
   },
   { timestamps: true }
