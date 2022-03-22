@@ -1,61 +1,56 @@
 const mongoose = require("mongoose");
 
-const eventSchema = mongoose.Schema(
+const eventSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      minLength: 3,
-      maxLength: 50,
-      required: [true, "Title can't be empty!"],
-    },
-    cover: {
-      type: String,
-      required: [true, "Cover can't be empty!"],
-    },
-    date: {
-      type: Date,
-      required: [true, "Date can't be empty!"],
-    },
-    city: {
-      type: String,
-      minLength: 3,
-      maxLength: 50,
-      required: [true, "City can't be empty!"],
+      required: [true, "Title can't be empty"],
+      minlength: 3,
+      maxlength: 50,
     },
     price: {
       type: Number,
+      default: 0,
     },
-    tagline: {
+    date: {
+      type: Date,
+      required: [true, "Date can't be empty"],
+    },
+    cover: {
       type: String,
-      minLength: 3,
-      maxLength: 50,
-      required: [true, "Tagline can't be empty!"],
+      required: [true, "Cover can't be empty"],
     },
     about: {
       type: String,
-      required: [true, "About can't be empty!"],
+      required: [true, "About can't be empty"],
     },
-    keypoint: {
-      type: Array,
-      required: [true, "Keypoint can't be empty!"],
-    },
-    vanueName: {
+    venueName: {
       type: String,
-      minLength: 3,
-      maxLength: 50,
-      required: [true, "Vanue Name can't be empty!"],
+      required: [true, "Vanue name can't be empty"],
     },
+    tagline: {
+      type: String,
+      required: [true, "Tagline can't be empty"],
+    },
+    keyPoint: [
+      {
+        type: String,
+      },
+    ],
     category: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Category",
+      required: [true, "Category can't be empty"],
     },
     speaker: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Speaker",
+      required: [true, "Speaker can't be empty"],
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
+      required: [true, "User can't be empty"],
     },
   },
   { timestamps: true }

@@ -93,7 +93,8 @@ const update = async (req, res, next) => {
       );
 
     if (!req.file) {
-      (data.name = name), (data.role = role);
+      data.name = name;
+      data.role = role;
     } else {
       let currentImage = `${config.rootPath}/public/uploads/speaker/${data.avatar}`;
 
