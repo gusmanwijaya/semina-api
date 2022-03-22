@@ -1,7 +1,7 @@
-const User = require("../users/model");
+const User = require("./model");
 const { StatusCodes } = require("http-status-codes");
-const CustomAPIError = require("../../../errors");
-const { createJWT, createTokenUser } = require("../../../utils");
+const CustomAPIError = require("../../../../errors");
+const { createJWT, createTokenUser } = require("../../../../utils");
 
 const signUp = async (req, res, next) => {
   try {
