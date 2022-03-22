@@ -13,6 +13,8 @@ const speakerRouter = require("./app/api/v1/speaker/router");
 const eventRouter = require("./app/api/v1/event/router");
 const transactionRouter = require("./app/api/v1/transaction/router");
 
+const participantRouter = require("./app/api/v1/participant/router");
+
 const notFoundMiddleware = require("./app/middlewares/not-found");
 const handleErrorMiddleware = require("./app/middlewares/handle-error");
 
@@ -35,6 +37,8 @@ app.use(`${apiVersion}/category`, categoryRouter);
 app.use(`${apiVersion}/speaker`, speakerRouter);
 app.use(`${apiVersion}/event`, eventRouter);
 app.use(`${apiVersion}/transaction`, transactionRouter);
+
+app.use(`${apiVersion}/participant`, participantRouter);
 
 app.use(notFoundMiddleware);
 app.use(handleErrorMiddleware);
