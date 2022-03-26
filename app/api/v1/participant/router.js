@@ -5,8 +5,9 @@ const { authenticationParticipant } = require("../../../middlewares/auth");
 
 const { landingPage, detailPage } = require("./controller");
 
-router.use(authenticationParticipant);
 router.get("/landing-page", landingPage);
 router.get("/detail-page/:id", detailPage);
+
+// router.use(authenticationParticipant);
 
 module.exports = router;

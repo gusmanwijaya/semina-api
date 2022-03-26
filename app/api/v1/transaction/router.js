@@ -1,9 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-const { authenticationUser } = require("../../../middlewares/auth");
+const {
+  authenticationUser,
+  authenticationParticipant,
+} = require("../../../middlewares/auth");
 
-const { getAll, getOne } = require("./controller");
+const { getAll, getOne, createDummy } = require("./controller");
+
+router.post("/create-dummy", authenticationParticipant, createDummy);
 
 router.use(authenticationUser);
 

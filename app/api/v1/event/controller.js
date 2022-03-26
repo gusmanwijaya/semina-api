@@ -222,7 +222,7 @@ const update = async (req, res, next) => {
       data.user = user;
     } else {
       let currentImage = `${config.rootPath}/public/uploads/event/${data.cover}`;
-      if (currentImage && fs.existsSync(currentImage)) {
+      if (fs.existsSync(currentImage)) {
         fs.unlinkSync(currentImage);
       }
 
@@ -259,10 +259,9 @@ const destroy = async (req, res, next) => {
     if (!data)
       throw new CustomAPI.NotFound(`Event with id : ${eventId} not found`);
 
-    if (data.cover && data.cover !== "") {
-      let currentImage = `${config.rootPath}/public/uploads/event/${data.cover}`;
-      if (currentImage && fs.existsSync(currentImage))
-        fs.unlinkSync(currentImage);
+    let currentImage = `${config.rootPath}/public/uploads/event/${data.cover}`;
+    if (fs.existsSync(currentImage)) {
+      fs.unlinkSync(currentImage);
     }
 
     await data.remove();

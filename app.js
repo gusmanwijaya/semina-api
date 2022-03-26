@@ -12,6 +12,7 @@ const categoryRouter = require("./app/api/v1/category/router");
 const speakerRouter = require("./app/api/v1/speaker/router");
 const eventRouter = require("./app/api/v1/event/router");
 const transactionRouter = require("./app/api/v1/transaction/router");
+const paymentRouter = require("./app/api/v1/payment/router");
 
 const participantRouter = require("./app/api/v1/participant/router");
 
@@ -37,6 +38,7 @@ app.use(`${apiVersion}/category`, categoryRouter);
 app.use(`${apiVersion}/speaker`, speakerRouter);
 app.use(`${apiVersion}/event`, eventRouter);
 app.use(`${apiVersion}/transaction`, transactionRouter);
+app.use(`${apiVersion}/payment`, paymentRouter);
 
 app.use(`${apiVersion}/participant`, participantRouter);
 
