@@ -3,11 +3,16 @@ const router = express.Router();
 
 const { authenticationParticipant } = require("../../../middlewares/auth");
 
-const { landingPage, detailPage } = require("./controller");
+const {
+  landingPage,
+  detailPage,
+  checkout,
+  dashboard,
+} = require("./controller");
 
 router.get("/landing-page", landingPage);
 router.get("/detail-page/:id", detailPage);
-
-// router.use(authenticationParticipant);
+router.post("/checkout", authenticationParticipant, checkout);
+router.get("/dashboard", authenticationParticipant, dashboard);
 
 module.exports = router;

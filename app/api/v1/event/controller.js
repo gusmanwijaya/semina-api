@@ -17,6 +17,8 @@ const create = async (req, res, next) => {
       venueName,
       tagline,
       keyPoint,
+      status,
+      stock,
       category,
       speaker,
     } = req.body;
@@ -48,6 +50,8 @@ const create = async (req, res, next) => {
       venueName,
       tagline,
       keyPoint: JSON.parse(keyPoint),
+      status,
+      stock,
       category,
       speaker,
       cover: req.file.filename,
@@ -100,7 +104,7 @@ const getAll = async (req, res, next) => {
 
     const data = await Event.find(condition)
       .select(
-        "_id title price date cover about venueName tagline keyPoint category speaker user"
+        "_id title price date cover about venueName tagline keyPoint status stock category speaker user"
       )
       .populate({
         path: "category",
@@ -136,7 +140,7 @@ const getOne = async (req, res, next) => {
 
     const data = await Event.findOne({ _id: eventId, user })
       .select(
-        "_id title price date cover about venueName tagline keyPoint category speaker user"
+        "_id title price date cover about venueName tagline keyPoint status stock category speaker user"
       )
       .populate({
         path: "category",
@@ -177,6 +181,8 @@ const update = async (req, res, next) => {
       venueName,
       tagline,
       keyPoint,
+      status,
+      stock,
       category,
       speaker,
     } = req.body;
@@ -217,6 +223,8 @@ const update = async (req, res, next) => {
       data.venueName = venueName;
       data.tagline = tagline;
       data.keyPoint = JSON.parse(keyPoint);
+      data.status = status;
+      data.stock = stock;
       data.category = category;
       data.speaker = speaker;
       data.user = user;
@@ -233,6 +241,8 @@ const update = async (req, res, next) => {
       data.venueName = venueName;
       data.tagline = tagline;
       data.keyPoint = JSON.parse(keyPoint);
+      data.status = status;
+      data.stock = stock;
       data.category = category;
       data.speaker = speaker;
       data.cover = req.file.filename;

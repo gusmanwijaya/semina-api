@@ -37,6 +37,15 @@ const eventSchema = new mongoose.Schema(
         type: String,
       },
     ],
+    status: {
+      type: Boolean,
+      enum: [true, false],
+      default: true,
+    },
+    stock: {
+      type: Number,
+      default: 0,
+    },
     category: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Category",
