@@ -48,7 +48,9 @@ const getAll = async (req, res, next) => {
       };
     }
 
-    const data = await Speaker.find(condition).select("_id name role user");
+    const data = await Speaker.find(condition).select(
+      "_id name role avatar user"
+    );
 
     res.status(StatusCodes.OK).json({ statusCode: StatusCodes.OK, data });
   } catch (error) {
@@ -62,7 +64,7 @@ const getOne = async (req, res, next) => {
     const user = req.user._id;
 
     const data = await Speaker.findOne({ _id: speakerId, user }).select(
-      "_id name role user"
+      "_id name role avatar user"
     );
 
     if (!data)
