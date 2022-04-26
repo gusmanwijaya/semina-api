@@ -8,7 +8,7 @@ const Transaction = require("../transaction/model");
 const landingPage = async (req, res, next) => {
   try {
     const data = await Event.find({ status: true })
-      .select("_id title price date cover venueName category")
+      .select("_id title price date cover venueName category stock")
       .populate({
         path: "category",
         select: "_id name",
@@ -31,7 +31,7 @@ const detailPage = async (req, res, next) => {
 
     const data = await Event.findOne({ _id: eventId, status: true })
       .select(
-        "_id title price date cover venueName keyPoint tagline about speaker"
+        "_id title price date cover venueName keyPoint tagline about speaker stock"
       )
       .populate({
         path: "speaker",
@@ -58,7 +58,7 @@ const checkout = async (req, res, next) => {
 
     const checkEvent = await Event.findOne({ _id: event })
       .select(
-        "_id title price date cover about venueName tagline keyPoint status stock category speaker"
+        "_id title price date cover about venueName tagline keyPoint status stock category speaker stock"
       )
       .populate({
         path: "category",
