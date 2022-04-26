@@ -131,9 +131,32 @@ const dashboard = async (req, res, next) => {
   }
 };
 
+const payment = async (req, res, next) => {
+  try {
+    const { status } = req.query;
+
+    let condition = {};
+
+    if (status) {
+      condition = {
+        status,
+      };
+    }
+
+    const data = await Payment.find(condition)
+      .select("_id type imageUrl status user isChecked")
+      .populate("user", "_id name email role", "User");
+
+    res.status(StatusCodes.OK).json({ statusCode: StatusCodes.OK, data });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   landingPage,
   detailPage,
   checkout,
   dashboard,
+  payment,
 };
