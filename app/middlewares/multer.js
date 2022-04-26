@@ -11,7 +11,11 @@ const storage = multer.diskStorage({
 });
 
 const fileFilter = (req, file, callback) => {
-  if (file.mimetype === "image/jpeg" || file.mimetype === "image/png") {
+  if (
+    file.mimetype === "image/jpeg" ||
+    file.mimetype === "image/png" ||
+    file.mimetype === "image/svg+xml"
+  ) {
     callback(null, true);
   } else {
     callback({ message: "Unsupported format file" }, false);
