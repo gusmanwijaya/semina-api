@@ -17,6 +17,11 @@ const PaymentSchema = new mongoose.Schema(
       enum: [true, false],
       default: false,
     },
+    isChecked: {
+      type: Boolean,
+      enum: [true, false],
+      default: false,
+    },
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",

@@ -46,7 +46,7 @@ const getAll = async (req, res, next) => {
     }
 
     const data = await Payment.find(condition)
-      .select("_id type imageUrl status user")
+      .select("_id type imageUrl status user isChecked")
       .populate("user", "_id name email role", "User");
 
     res.status(StatusCodes.OK).json({ statusCode: StatusCodes.OK, data });
@@ -61,7 +61,7 @@ const getOne = async (req, res, next) => {
     const user = req.user._id;
 
     const data = await Payment.findOne({ _id: paymentId, user })
-      .select("_id type imageUrl status user")
+      .select("_id type imageUrl status user isChecked")
       .populate("user", "_id name email role", "User");
 
     if (!data)
