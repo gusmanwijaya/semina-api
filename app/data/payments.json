@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "626824e4fa64d43e4e5201ed"
+  },
+  "type": "Master Card",
+  "imageUrl": "2022-04-26T16:59:16.941Z-ic-mastercard.svg",
+  "status": false,
+  "isChecked": false,
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650992357037"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650992357037"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626824fafa64d43e4e5201f0"
+  },
+  "type": "Sewallet",
+  "imageUrl": "2022-04-26T16:59:37.991Z-ic-sewallet.svg",
+  "status": false,
+  "isChecked": false,
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650992378006"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650992378006"
+    }
+  },
+  "__v": 0
+}]

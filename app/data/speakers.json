@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "62380717bd1dccc8f4e1e021"
+  },
+  "name": "Elfin Sanjaya",
+  "avatar": "images/avatar.png",
+  "role": "Fullstack Javascript",
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647838999609"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647838999609"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6238072abd1dccc8f4e1e024"
+  },
+  "name": "Poniman",
+  "avatar": "images/avatar.png",
+  "role": "Enterpreanure",
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647839018573"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647839018573"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62380aa8bb48f8ad4f449165"
+  },
+  "name": "Gusman Wijaya",
+  "avatar": "2022-03-21T05:18:32.341Z-IMG_1299.JPG",
+  "role": "Fullstack Website Developer",
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647839912395"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647839912395"
+    }
+  },
+  "__v": 0
+}]

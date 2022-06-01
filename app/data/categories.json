@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "6235d50a6e3ba92b9f267a9c"
+  },
+  "name": "Frontend",
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647695114257"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647695114257"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6235d5fa6136b1bc016f234e"
+  },
+  "name": "Backend",
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647695354499"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647695354499"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6235d5ff6136b1bc016f2351"
+  },
+  "name": "Fullstack",
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647695359837"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647695359837"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "6296dd96bc5f720cd0ec9122"
+  },
+  "firstName": "Gusman",
+  "lastName": "Wijaya",
+  "email": "gusmanwijaya@gmail.com",
+  "role": "Website Developer",
+  "password": "$2a$10$EzcYkKJWppSZlQrSFXfZieeJvtQzOgtXOKeq3.lxV5oeMW6QgXCPa",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654054294182"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654054294182"
+    }
+  },
+  "__v": 0
+}]

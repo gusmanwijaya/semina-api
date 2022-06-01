@@ -1,0 +1,127 @@
+[{
+  "_id": {
+    "$oid": "62396bf23af642d105e0e33b"
+  },
+  "title": "Bootcamp MERN Stack 2021",
+  "price": 500,
+  "date": {
+    "$date": {
+      "$numberLong": "1647694800000"
+    }
+  },
+  "cover": "2022-03-22T07:18:54.162Z-card-1.png",
+  "about": "Most realtors and investors are using Social Media (Facebook and Google) ineffectively because they don't know what they're doing or to start. They spend hours and hours trying different things and getting nowhere. This makes them feel like giving up on marketing altogether.",
+  "venueName": "Bengkulu",
+  "tagline": "Start Your Design Career With Design Sprint",
+  "keyPoint": [
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether."
+  ],
+  "category": {
+    "$oid": "6235d50a6e3ba92b9f267a9c"
+  },
+  "speaker": {
+    "$oid": "62380aa8bb48f8ad4f449165"
+  },
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647930354509"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650259519032"
+    }
+  },
+  "__v": 0,
+  "status": true,
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "62397bc6690833d782e9f79c"
+  },
+  "title": "Bootcamp MERN Stack 2022",
+  "price": 500,
+  "date": {
+    "$date": {
+      "$numberLong": "1647697740000"
+    }
+  },
+  "cover": "2022-03-22T07:33:26.264Z-card-2.png",
+  "about": "Most realtors and investors are using Social Media (Facebook and Google) ineffectively because they don't know what they're doing or to start. They spend hours and hours trying different things and getting nowhere. This makes them feel like giving up on marketing altogether.",
+  "venueName": "Bandung",
+  "tagline": "Start Your Design Career With Design Sprint",
+  "keyPoint": [
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether."
+  ],
+  "category": {
+    "$oid": "6235d5ff6136b1bc016f2351"
+  },
+  "speaker": {
+    "$oid": "62380717bd1dccc8f4e1e021"
+  },
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647934406291"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650993268146"
+    }
+  },
+  "__v": 0,
+  "status": true,
+  "stock": 44
+},{
+  "_id": {
+    "$oid": "62397bf4690833d782e9f7a2"
+  },
+  "title": "Bootcamp MERN Stack 2023",
+  "price": 500,
+  "date": {
+    "$date": {
+      "$numberLong": "1647697740000"
+    }
+  },
+  "cover": "2022-03-22T07:34:12.714Z-card-3.png",
+  "about": "Most realtors and investors are using Social Media (Facebook and Google) ineffectively because they don't know what they're doing or to start. They spend hours and hours trying different things and getting nowhere. This makes them feel like giving up on marketing altogether.",
+  "venueName": "Jakarta",
+  "tagline": "Start Your Design Career With Design Sprint",
+  "keyPoint": [
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+    "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether."
+  ],
+  "category": {
+    "$oid": "6235d5fa6136b1bc016f234e"
+  },
+  "speaker": {
+    "$oid": "6238072abd1dccc8f4e1e024"
+  },
+  "user": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647934452737"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650259411540"
+    }
+  },
+  "__v": 0,
+  "status": true,
+  "stock": 50
+}]

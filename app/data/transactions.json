@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "62682874fa64d43e4e520272"
+  },
+  "event": {
+    "$oid": "62397bc6690833d782e9f79c"
+  },
+  "personalDetail": {
+    "firstName": "Etia",
+    "lastName": "Rosalina",
+    "email": "etiarosalina@gmail.com",
+    "role": "Designer"
+  },
+  "payment": {
+    "$oid": "626824fafa64d43e4e5201f0"
+  },
+  "historyEvent": {
+    "_id": {
+      "$oid": "62397bc6690833d782e9f79c"
+    },
+    "title": "Bootcamp MERN Stack 2022",
+    "price": 500,
+    "date": {
+      "$date": {
+        "$numberLong": "1647697740000"
+      }
+    },
+    "cover": "2022-03-22T07:33:26.264Z-card-2.png",
+    "about": "Most realtors and investors are using Social Media (Facebook and Google) ineffectively because they don't know what they're doing or to start. They spend hours and hours trying different things and getting nowhere. This makes them feel like giving up on marketing altogether.",
+    "venueName": "Bandung",
+    "tagline": "Start Your Design Career With Design Sprint",
+    "keyPoint": [
+      "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+      "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether.",
+      "Hours trying different things and getting nowhere makes them feel like giving up on marketing altogether."
+    ],
+    "category": {
+      "$oid": "6235d5ff6136b1bc016f2351"
+    },
+    "speaker": {
+      "$oid": "62380717bd1dccc8f4e1e021"
+    },
+    "status": true,
+    "stock": 44,
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1650993268146"
+      }
+    }
+  },
+  "historyPayment": {
+    "_id": {
+      "$oid": "626824fafa64d43e4e5201f0"
+    },
+    "type": "Sewallet",
+    "imageUrl": "2022-04-26T16:59:37.991Z-ic-sewallet.svg",
+    "status": false
+  },
+  "participant": {
+    "$oid": "6239aae78e998024bc20876f"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650993268155"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650993268155"
+    }
+  },
+  "__v": 0
+}]

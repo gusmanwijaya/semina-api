@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "6235cd2a87f23db10b6a8c2e"
+  },
+  "name": "Super Admin",
+  "email": "superadmin@gmail.com",
+  "password": "$2a$10$1z6ztOytRmIYt.aEUI7fK.PCjNQ8o.0HnfFsEblGguegxMoJvrrsi",
+  "role": "super-admin",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1647693098364"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1647693098364"
+    }
+  },
+  "__v": 0
+}]
